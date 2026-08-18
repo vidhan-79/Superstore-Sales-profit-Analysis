@@ -1,4 +1,19 @@
 # Superstore Sales & profit Analysis
 Analyze sales and profitability to identify the company's best-performing products, customers, regions and categories, and discover areas where the business is losing money.
 
+<h3>Business Ques.. </h3>
 
+1. What is total sales?
+2. What is total profit?
+3. Which category generates the most sales?
+4. Which category generates the most profit?
+5. Which sub-category is the most profitable?
+6. Which products are generating losses?
+7. Which region performs best?
+8. Which states generate the highest sales?
+9. How do discounts affect profit?
+10. Which customer segment is most profitable?
+11. How have sales changed over time?
+12. Which shipping mode is used most?
+13. What are the company's biggest problem areas?
+14. What business recommendations can we make?
