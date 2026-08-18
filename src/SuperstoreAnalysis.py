@@ -2,6 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib as plt
 
-super_store_df = pd.read_csv('Superstore.csv')
+super_store_df = pd.read_csv('superStore.xlsx')
 
 print(super_store_df.head())
