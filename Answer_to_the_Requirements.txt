@@ -1,0 +1,76 @@
+1. What is total sales?
+Ans. Total Sales is : 2297200.8603
+
+2. What is total profit?
+Ans. Total Profit is : 286397.0217
+
+3. Which category generates the most sales?
+Ans. Technology : 836154.0330
+
+4. Which category generates the most profit?
+Ans. Technology : 145454.9481
+
+5. Which sub-category is the most profitable?
+Ans. With 55618$ profit Copiers is the most profitable sub-category.
+
+6. Which products are generating losses?
+Ans.	Cubify CubeX 3D Printer Double Head Print                                      -8,879.97
+	Lexmark MX611dhe Monochrome Laser Printer                                      -4,589.97
+	Cubify CubeX 3D Printer Triple Head Print                                      -3,839.99
+	Chromcraft Bull-Nose Wood Oval Conference Tables & Bases                       -2,876.12
+	Bush Advantage Collection Racetrack Conference Table                           -1,934.40
+	GBC DocuBind P400 Electric Binding System                                      -1,878.17
+	Cisco TelePresence System EX90 Videoconferencing Unit                          -1,811.08
+
+7. Which region performs best?
+Ans. With the 725457.82$ of sales West Region performs best.
+
+8. Which states generate the highest sales?
+Ans. With 457687.63$ California generates the highest sales.
+
+9. How do discounts affect profit?:
+Ans. The analysis shows a negative relationship between discount levels and profit, suggesting that higher discounts are generally associated with lower profitability.
+
+10. Which customer segment is most profitable?
+Ans. with 134119.20$ profit Consumer segment is most profitable.
+
+11. How have sales changed over time?
+Sales showed an overall upward trend between 2015 and 2018, with year-over-year growth of X% in 2016, X% in 2017 and X% in 2018
+
+12. Which shipping mode is used most?
+Ans. The Standard Class with 5968 is the most used shipping mode.
+
+13. What are the company's biggest problem areas?
+Ans.	The company's biggest problem areas are:
+	Loss-making products that generate significant negative profit.
+	High discount levels that reduce average profitability.
+	Certain products/sub-categories that generate low or negative profit despite contributing to sales.
+	Underperforming regions and states compared with the best-performing areas.
+	Worst Performing Sub-Category 
+	Tables      -17,725.48
+	Bookcases    -3,472.56
+	Supplies     -1,189.10
+	Fasteners       949.52
+	Machines      3,384.76
+
+	Worst performing region
+	South     391,721.91
+	Central   501,239.89
+	East      678,781.24
+	West      725,457.82
+
+	Worst performing state 
+	West Virginia   1,209.82
+	Maine           1,270.53
+	South Dakota    1,315.56
+	Wyoming         1,603.14
+
+14. What business recommendations can we make?
+Ans. Based on the analysis, the company should:
+
+	Review the Tables, Bookcases, and Supplies sub-categories to identify the reasons for their negative profits and consider 	improving pricing, reducing costs, or discontinuing consistently unprofitable products.
+	Control high discount levels, as excessive discounts are associated with lower profitability.
+	Focus on improving sales in the South region and other low-performing states by analyzing customer demand, pricing, product 	availability, and marketing strategies.
+	Continue investing in profitable categories and sub-categories, particularly Technology and Copiers, which are strong contributors 	to sales and profit.
+	Monitor profit along with sales when making business decisions, because high sales do not always mean high profitability.
+	Investigate successful markets such as the West region and California to identify strategies that could be applied to weaker 	regions and states.
