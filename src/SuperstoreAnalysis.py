@@ -50,9 +50,9 @@ print(f"Q2. Total Profit: ${total_profit:,.2f}")
 
 sales_by_category = super_store_df.groupby('Category')['Sales'].sum()
 top_sales_category = sales_by_category.idxmax()
-print(f"\nQ3. Category with Most Sales: ${top_sales_category} "
+print(f"\nQ3. Category with Most Sales: {top_sales_category} "
       f"(${sales_by_category.max():,.2f})")
-print(f"$sales_by_category")
+print(sales_by_category)
 
 
 # =========================================================
@@ -63,7 +63,7 @@ profit_by_category = super_store_df.groupby('Category')['Profit'].sum()
 top_profit_category = profit_by_category.idxmax()
 print(f"\nQ4. Category with Most Profit: {top_profit_category} "
       f"(${profit_by_category.max():,.2f})")
-print(f"${profit_by_category}")
+print(profit_by_category)
 
 
 # =========================================================
@@ -81,15 +81,18 @@ print(f"\nQ5. Most Profitable Sub-Category: {top_subcategory} "
 print(profit_by_subcategory)
 
 # Chart: Profit by Sub-Category
-plt.figure(figsize=(12, 6))
-profit_by_subcategory.plot(kind="bar")
-plt.title("Profit by Sub-Category")
-plt.xlabel("Sub-Category")
-plt.ylabel("Total Profit")
-plt.xticks(rotation=45, ha="right")
+
+
+fig, ax = plt.subplots(figsize=(10, 6))
+profit_by_subcategory.plot(kind="bar", ax=ax, color='lightcoral', edgecolor='black', width=0.8, alpha=0.7)
+plt.title("Profit by Sub-Category", fontsize=14, fontweight='bold', color='darkgreen', alpha=0.9, pad=15)
+plt.xlabel("Sub-Category", fontsize=12, fontweight='bold', color='darkgreen', alpha=0.9)
+plt.ylabel("Total Profit", fontsize=12, fontweight='bold', color='darkgreen', alpha=0.9)
+plt.xticks(rotation=45, ha="right", fontsize=10, fontweight='bold', color='darkblue', alpha=0.8, rotation_mode='anchor')
 plt.tight_layout()
-# plt.savefig("Visuals/profit_by_subcategory.png")
+plt.savefig("Visuals/profit_by_subcategory.png", dpi=150)
 plt.show()
+plt.close(fig)
 
 
 # =========================================================
@@ -140,13 +143,21 @@ correlation = super_store_df['Discount'].corr(super_store_df['Profit'])
 print(f"Correlation between Discount and Profit: {correlation:.3f}")
 
 # Chart: Average Profit by Discount
-ax = discount_profit.plot(kind="bar")
-ax.set_xticklabels([f"{x:.0%}" for x in discount_profit.index])
-plt.title("Average Profit by Discount")
-plt.xlabel("Discount")
-plt.ylabel("Average Profit")
+fig, ax = plt.subplots(figsize=(10, 6))
+discount_profit.plot(kind="bar", ax=ax, color='skyblue', edgecolor='black', width=0.8, alpha=0.7)
+ax.set_xticklabels(
+    [f"{x:.0%}" for x in discount_profit.index],
+    rotation=0,
+    fontsize=9, fontweight='bold', color='darkblue', alpha=0.8
+)
+plt.title("Average Profit by Discount", fontsize=14, fontweight='bold', color='darkgreen', alpha=0.9, pad=20)
+plt.xlabel("Discount", fontsize=12, fontweight='bold', color='darkgreen', alpha=0.9)
+plt.ylabel("Average Profit", fontsize=12, fontweight='bold', color='darkgreen', alpha=0.9)
+plt.subplots_adjust(top=0.88)
 plt.tight_layout()
+plt.savefig("Visuals/avg_profit_by_discount.png", dpi=150)
 plt.show()
+plt.close(fig)
 
 
 # =========================================================
@@ -176,13 +187,16 @@ print(monthly_sales)
 
 monthly_sales.index = monthly_sales.index.to_timestamp()
 
-plt.figure(figsize=(12, 6))
-plt.plot(monthly_sales.index, monthly_sales.values)
-plt.title("Monthly Sales Trend")
-plt.xlabel("Date")
-plt.ylabel("Sales")
+fig = plt.figure(figsize=(12, 6))
+plt.plot(monthly_sales.index, monthly_sales.values, marker='o', linestyle='-', color='b', label='Monthly Sales', alpha=0.7, linewidth=2, markersize=5, markerfacecolor='orange', markeredgewidth=1, markeredgecolor='black')
+plt.title("Monthly Sales Trend", fontsize=14, fontweight='bold', color='darkgreen', alpha=0.9, pad=15)
+plt.xlabel("Date", fontsize=12, fontweight='bold', color='darkgreen', alpha=0.9)
+plt.ylabel("Sales", fontsize=12, fontweight='bold', color='darkgreen', alpha=0.9)
+plt.legend()
 plt.tight_layout()
+plt.savefig("Visuals/monthly_sales_trend.png", dpi=150)
 plt.show()
+plt.close(fig)
 
 yearly_sales = (
     super_store_df
@@ -215,9 +229,7 @@ print(ship_mode)
 print("\nQ13. Biggest Problem Areas:")
 
 print("\nWorst Performing Sub-Categories (by Profit):")
-worst_performing_subcategory = profit_by_subcategory[
-    (profit_by_subcategory < 0)
-] 
+print(profit_by_subcategory.sort_values().head())
 
 print("\nWorst Performing Regions (by Sales):")
 print(sales_by_region.sort_values().head())
