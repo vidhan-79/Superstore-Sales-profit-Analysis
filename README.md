@@ -1,4 +1,4 @@
-# 📊 Superstore Sales & Profit Analysis
+# 📊 Superstore Sales & Profit Analysis(AI Powered)
 
 An end-to-end exploratory data analysis of the **Superstore dataset** using Python (pandas, matplotlib) to uncover sales trends, profit drivers, and business problem areas — answering 14 real business questions a retail company would ask.
 
