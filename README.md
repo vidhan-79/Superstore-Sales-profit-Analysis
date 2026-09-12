@@ -149,11 +149,8 @@ Sales showed an overall **upward trend from 2015 to 2018**, with consistent year
 
 ---
 
-## 📌 Next Steps
-
-- [ ] Build interactive Power BI dashboard on top of these findings
-- [ ] Add filtered views by Region/Segment for deeper drill-down
-- [ ] Publish Power BI report link here once complete
+## 📌 Dashboard
+https://analysis-dashboardproject.netlify.app/
 
 ---
 
